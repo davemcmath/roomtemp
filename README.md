@@ -4,7 +4,13 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 sudo rpi-update
 
+sudo reboot
+
 sudo raspi-config
+
+Enable -  SPI, I2C and 1-Wire
+
+sudo apt-get update
 
 sudo apt-get install build-essential python-dev python-openssl python-influxdb -y
 
