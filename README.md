@@ -27,8 +27,8 @@ sudo python setup.py install
 sudo python Adafruit_Python_DHT/examples/AdafruitDHT.py 22 4
 
 
-#!/bin/bash
-cronline1="5 * * * * /home/pi/restartscript.sh"
-cronline2="@reboot /home/pi/restartscript.sh"
-(crontab -u pi -l; echo "$cronline1" ) | crontab -u pi -
-(crontab -u pi -l; echo "$cronline2" ) | crontab -u pi -
+	#!/bin/bash
+	cronline1="5 * * * * /home/pi/restartscript.sh"
+	cronline2="@reboot /home/pi/restartscript.sh"
+	(crontab -u pi -l; echo "$cronline1" ) | crontab -u pi -
+	(crontab -u pi -l; echo "$cronline2" ) | crontab -u pi -
